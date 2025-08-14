@@ -45,13 +45,12 @@ const cardVariants = {
   }
 };
 
-// WhatsApp constants (single source of truth) – set these in your .env
-const WHATSAPP_E164 = process.env.NEXT_PUBLIC_WHATSAPP_E164 ?? "27798131590" // no leading +
-const WHATSAPP_DISPLAY = process.env.NEXT_PUBLIC_WHATSAPP_DISPLAY ?? "+27 79 813 1590"
-const WHATSAPP_TEXT = encodeURIComponent(
-  process.env.NEXT_PUBLIC_WHATSAPP_TEXT ?? "Hi! I'm interested in your services. Can you help me?"
-)
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_E164}?text=${WHATSAPP_TEXT}`
+// WhatsApp constants (single source of truth)
+const WHATSAPP_E164 = "27798131590"; // no leading +
+const WHATSAPP_TEXT = encodeURIComponent("Hi! I'm interested in your services. Can you help me?");
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_E164}?text=${WHATSAPP_TEXT}`;
+const PHONE_TEL = "+27798131590";
+const WHATSAPP_DISPLAY = "+27 79 813 1590";
 
 export default function Home() {
   return (
@@ -98,7 +97,10 @@ export default function Home() {
                 Experience excellence with our comprehensive range of services designed to enhance your lifestyle and business operations.
               </motion.p>
               
-              <motion.div className="flex flex-wrap gap-4" variants={itemVariants}>
+              <motion.div 
+                className="flex flex-wrap gap-4"
+                variants={itemVariants}
+              >
                 <Button 
                   asChild 
                   size="lg" 
@@ -109,7 +111,12 @@ export default function Home() {
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="bg-transparent border-white/20 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300">
+                <Button 
+                  asChild 
+                  size="lg" 
+                  variant="outline" 
+                  className="bg-transparent border-white/20 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300"
+                >
                   <a href={WHATSAPP_URL} className="flex items-center">
                     <Phone className="mr-2 h-4 w-4" />
                     WhatsApp Us
@@ -614,7 +621,7 @@ export default function Home() {
         </div>
       </section>
     </main>
-  )
+  );
 }
 
 const features = [
