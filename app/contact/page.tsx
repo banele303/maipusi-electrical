@@ -368,8 +368,8 @@ export default function ContactPage() {
                   </p>
                   <div className="flex items-center gap-3 text-lg font-semibold">
                     <Phone className="h-5 w-5 text-red-600" />
-                    <a href="tel:0790959784" className="hover:text-red-800 text-red-700">
-                      079 095 9784
+                    <a href="https://wa.me/27798131590" className="hover:text-red-800 text-red-700">
+                      +27 79 813 1590
                     </a>
                   </div>
                 </div>
@@ -394,13 +394,13 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent className="p-6">
                     <p className="mb-3 flex justify-between">
-                      <strong>Main Line:</strong> <span className="text-blue-600">27 79 813 1590</span>
+                      <strong>Main Line:</strong> <span className="text-blue-600">(011) 925 4615</span>
                     </p>
                     <p className="mb-3 flex justify-between">
-                      <strong>Mobile:</strong> <span className="text-blue-600">079 095 9784</span>
+                      <strong>WhatsApp:</strong> <span className="text-blue-600">+27 79 813 1590</span>
                     </p>
                     <p className="flex justify-between">
-                      <strong>Emergency:</strong> <span className="text-red-600">079 095 9784</span>
+                      <strong>Emergency:</strong> <span className="text-red-600">+27 79 813 1590</span>
                     </p>
                   </CardContent>
                 </Card>
