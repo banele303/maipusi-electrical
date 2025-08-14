@@ -104,7 +104,7 @@ export default function Navbar() {
       
       {/* Mobile Navigation */}
       <div className={cn(
-        "fixed inset-0 z-40 bg-white transform transition-transform duration-300 ease-in-out pt-20",
+        "fixed inset-0 z-40 bg-white/95 backdrop-blur-md shadow-xl transform transition-transform duration-300 ease-in-out pt-20",
         isOpen ? "translate-x-0" : "translate-x-full"
       )}>
         <nav className="container mx-auto px-4 py-6 flex flex-col">
