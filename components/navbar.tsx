@@ -94,7 +94,12 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button 
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100"
+            className={cn(
+              "md:hidden p-2 rounded-lg transition-colors duration-200",
+              isOpen 
+                ? "fixed top-4 right-4 z-50 bg-white/90 backdrop-blur-sm shadow-lg text-gray-700 hover:bg-white" 
+                : "text-gray-700 hover:bg-gray-100"
+            )}
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
