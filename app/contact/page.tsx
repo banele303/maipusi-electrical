@@ -364,12 +364,12 @@ export default function ContactPage() {
                 <div className="bg-gradient-to-r from-red-50 to-orange-50 p-6 rounded-2xl mt-8 border border-red-200">
                   <h3 className="text-xl font-bold mb-4 text-red-700">Emergency Electrical Repairs</h3>
                   <p className="mb-4 text-red-600">
-                    For urgent electrical issues that need immediate attention, call our emergency line:
+                    For urgent electrical issues that need immediate attention, contact our emergency line:
                   </p>
                   <div className="flex items-center gap-3 text-lg font-semibold">
                     <Phone className="h-5 w-5 text-red-600" />
                     <a href="https://wa.me/27798131590" className="hover:text-red-800 text-red-700">
-                      +27 79 813 1590
+                      +27 79 813 1590 (WhatsApp)
                     </a>
                   </div>
                 </div>
