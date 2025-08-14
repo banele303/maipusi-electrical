@@ -47,7 +47,7 @@ const cardVariants = {
 
 export default function Home() {
   return (
-    <main className="flex-1 bg-gradient-to-b from-gray-50 to-white md:px-[2rem]">
+    <main className="flex-1 bg-gradient-to-b from-gray-50 to-white ">
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-screen flex items-center bg-gradient-to-br from-gray-900 to-gray-800">
         {/* Animated Background Elements */}
@@ -62,7 +62,7 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 py-24 md:py-32 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-10">
             <motion.div 
               className="text-white"
               initial="hidden"
