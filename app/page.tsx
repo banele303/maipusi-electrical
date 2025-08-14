@@ -110,10 +110,10 @@ export default function Home() {
                   variant="outline" 
                   className="bg-transparent border-white/20 text-white hover:bg-white/10 hover:border-white/30 transition-all duration-300"
                 >
-                  <Link href="/contact" className="flex items-center">
+                  <a href="https://wa.me/27790959784" className="flex items-center">
                     <Phone className="mr-2 h-4 w-4" />
-                    Contact Us
-                  </Link>
+                    WhatsApp Us
+                  </a>
                 </Button>
               </motion.div>
               
@@ -603,9 +603,9 @@ export default function Home() {
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-                  <a href="tel:0790959784" className="flex items-center gap-2">
+                  <a href="https://wa.me/27790959784" className="flex items-center gap-2">
                     <Phone className="h-5 w-5" />
-                    Call 079 095 9784
+                    WhatsApp 079 095 9784
                   </a>
                 </Button>
               </motion.div>
